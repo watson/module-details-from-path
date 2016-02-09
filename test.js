@@ -1,6 +1,6 @@
 'use strict'
 
-var assert = require('assert')
+var test = require('tape')
 var parse = require('./')
 
 var paths = {
@@ -14,5 +14,8 @@ var paths = {
 
 Object.keys(paths).forEach(function (path) {
   var result = paths[path]
-  assert.deepStrictEqual(parse(path), result)
+  test(function (t) {
+    t.deepEqual(parse(path), result)
+    t.end()
+  })
 })

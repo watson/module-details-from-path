@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "standard": "^6.0.4"
+    "standard": "^6.0.4",
+    "tape": "^4.4.0"
   },
   "scripts": {
     "test": "standard && node test.js"
