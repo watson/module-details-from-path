@@ -9,7 +9,6 @@ module.exports = function (file) {
   if (!segments[index + 1]) return
   var scoped = segments[index + 1][0] === '@'
   var name = scoped ? segments[index + 1] + '/' + segments[index + 2] : segments[index + 1]
-  if (!name) return
   var offset = scoped ? 3 : 2
   return {
     name: name,
