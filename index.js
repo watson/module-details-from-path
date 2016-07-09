@@ -7,7 +7,7 @@ module.exports = function (file) {
   var index = segments.lastIndexOf('node_modules')
   if (index === -1) return
   if (!segments[index + 1]) return
-  var scoped = segments[index + 1].indexOf('@') === 0
+  var scoped = segments[index + 1][0] === '@'
   var name = scoped ? segments[index + 1] + '/' + segments[index + 2] : segments[index + 1]
   if (!name) return
   var offset = scoped ? 3 : 2
