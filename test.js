@@ -4,6 +4,7 @@ var test = require('tape')
 var parse = require('./')
 
 var paths = {
+  '/path/to/node_modules/@scope/name/index.js': { name: '@scope/name', basedir: '/path/to/node_modules/@scope/name', path: 'index.js' },
   '/path/to/node_modules/name/index.js': { name: 'name', basedir: '/path/to/node_modules/name', path: 'index.js' },
   '/path/to/node_modules/name/sub/index.js': { name: 'name', basedir: '/path/to/node_modules/name', path: 'sub/index.js' },
   '/path/to/node_modules/invalid/node_modules/name/index.js': { name: 'name', basedir: '/path/to/node_modules/invalid/node_modules/name', path: 'index.js' },

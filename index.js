@@ -6,11 +6,14 @@ module.exports = function (file) {
   var segments = file.split(path.sep)
   var index = segments.lastIndexOf('node_modules')
   if (index === -1) return
-  var name = segments[index + 1]
+  if (!segments[index + 1]) return
+  var scoped = segments[index + 1].indexOf('@') === 0
+  var name = scoped ? segments[index + 1] + '/' + segments[index + 2] : segments[index + 1]
   if (!name) return
+  var offset = scoped ? 3 : 2
   return {
     name: name,
-    basedir: segments.slice(0, index + 2).join(path.sep),
-    path: segments.slice(index + 2).join(path.sep)
+    basedir: segments.slice(0, index + offset).join(path.sep),
+    path: segments.slice(index + offset).join(path.sep)
   }
 }
