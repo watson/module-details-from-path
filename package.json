@@ -6,10 +6,12 @@
   "files": [],
   "dependencies": {},
   "devDependencies": {
+    "bench-node": "^0.5.4",
     "standard": "^15.0.1",
     "tape": "^4.6.0"
   },
   "scripts": {
+    "bench": "node --allow-natives-syntax bench.js",
     "lint": "standard",
     "test": "standard && node test.js",
     "test:ci": "node test.js"
