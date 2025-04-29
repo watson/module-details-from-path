@@ -13,10 +13,10 @@ npm install module-details-from-path --save
 ## Usage
 
 ```js
-var assert = require('assert')
-var parse = require('module-details-from-path')
+const assert = require('assert')
+const parse = require('module-details-from-path')
 
-var path = '/Users/watson/code/node_modules/blackjack/node_modules/picture-tube/bin/tube.js'
+const path = '/Users/watson/code/node_modules/blackjack/node_modules/picture-tube/bin/tube.js'
 
 assert.deepStrictEqual(parse(path), {
   name: 'picture-tube',
