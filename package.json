@@ -25,6 +25,7 @@
     "nodejs",
     "npm",
     "module",
+    "package",
     "extract",
     "parse",
     "name",
