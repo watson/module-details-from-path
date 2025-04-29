@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "Extract the Node.js module details like name and base path given an abosulte path to a file inside the module",
   "main": "index.js",
+  "files": [],
   "dependencies": {},
   "devDependencies": {
     "standard": "^15.0.1",
