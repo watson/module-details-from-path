@@ -1,7 +1,7 @@
 {
   "name": "module-details-from-path",
   "version": "1.0.3",
-  "description": "Extract the Node.js module details like name and base path given an abosulte path to a file inside the module",
+  "description": "Resolve npm package details, like name and base path, given an absolute path to a file inside a package",
   "main": "index.js",
   "files": [],
   "dependencies": {},

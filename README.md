@@ -1,7 +1,6 @@
 # module-details-from-path
 
-Extract the Node.js module details like name and base path given an
-absolute path to a file inside the module.
+Resolve npm package details, like name and base path, given an absolute path to a file inside a package.
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
