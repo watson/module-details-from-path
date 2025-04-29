@@ -3,7 +3,6 @@
 Extract the Node.js module details like name and base path given an
 absolute path to a file inside the module.
 
-[![Build status](https://travis-ci.org/watson/module-details-from-path.svg?branch=master)](https://travis-ci.org/watson/module-details-from-path)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 ## Installation
